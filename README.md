@@ -1,11 +1,11 @@
 # qnext
 
-一个轻量级的Node.js异步任务并发控制库
+一个轻量级Node.js异步任务并发控制库
 
 ## 安装
 
 ```
-npm install https://github.com/Chocolatl/qnext.git --save
+npm install qnext --save
 ```
 
 ## 介绍
