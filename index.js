@@ -76,10 +76,15 @@ class Qnext extends EventEmitter {
             }
         }
 
+        let whenError = (err) => {
+            nextStep();
+            throw err;
+        }
+
         promise = task();   // 执行任务        
 
         // then会返回一个新的promise，所以这里给promise变量重新赋值
-        promise = promise.then(nextStep, nextStep);    // 绑定任务成为完成态时的回调函数
+        promise = promise.then(nextStep, whenError);    // 绑定任务成为完成态时的回调函数
 
         this._active.push(promise);    // 将promise加入活动队列
     }
