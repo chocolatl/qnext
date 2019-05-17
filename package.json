@@ -23,12 +23,11 @@
     "url": "https://github.com/Chocolatl/qnext/issues"
   },
   "homepage": "https://github.com/Chocolatl/qnext#readme",
-  "dependencies": {
-    "@types/node": "^11.13.0"
-  },
+  "dependencies": {},
   "devDependencies": {
+    "@types/node": "^11.13.10",
     "chai": "^4.2.0",
     "mocha": "^5.2.0",
-    "typescript": "^3.4.2"
+    "typescript": "^3.4.5"
   }
 }
